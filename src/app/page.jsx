@@ -1,8 +1,9 @@
-import Image from "next/image";
+
 import styles from "./home.module.css";
 import Buttons from "./buttons";
 import About from './about/page';
 import { PageWrapper } from "./page-wrapper";
+import HeroImg from "./heroimg";
 
   
 const Home = () => {
@@ -21,7 +22,8 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.imgContainer}>
-          <Image src="/heroimg.png" alt="" width={600} height={600} className={styles.heroImg} />
+          <HeroImg />
+          {/* <Image src="/heroimg.png" alt="" width={600} height={600} className={styles.heroImg} /> */}
         </div>
       </div>
       
