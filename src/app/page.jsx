@@ -2,9 +2,13 @@ import Image from "next/image";
 import styles from "./home.module.css";
 import Buttons from "./buttons";
 import About from './about/page';
+import { PageWrapper } from "./page-wrapper";
+
   
 const Home = () => {
   return (
+    <>
+    <PageWrapper>
     <div>
       <div className={styles.container}>
         <div className={styles.textContainer}>
@@ -24,6 +28,8 @@ const Home = () => {
     <About />
 
     </div>
+    </PageWrapper>
+    </>
   );
 };
 
